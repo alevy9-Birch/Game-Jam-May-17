@@ -26,8 +26,6 @@ public class PlayerMovement : MonoBehaviour
 
     private Rigidbody2D rb;
 
-    [SerializeField] private FOV fov;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -44,10 +42,7 @@ public class PlayerMovement : MonoBehaviour
 
         Body.up = (Vector2)(mouseWorldPosition - Body.position);
         Head.up = Vector2.Lerp(Head.up, headDirection, 5 * Time.deltaTime);
-
-        fov.SetAimDirection(-Body.right);
-        fov.SetOrigin(transform.position);
-
+        
         targetDir = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).normalized;
         sliding = Physics2D.OverlapCircleAll(transform.position, 0.25f, slipperyLayers).Length != 0;
         stuck = Physics2D.OverlapCircleAll(transform.position, 0.25f, stickyLayers).Length != 0;
