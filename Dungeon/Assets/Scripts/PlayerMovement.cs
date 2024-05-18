@@ -1,6 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Runtime.CompilerServices;
+using System;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -28,6 +26,8 @@ public class PlayerMovement : MonoBehaviour
 
     private Rigidbody2D rb;
 
+    [SerializeField] private FOV fov;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -37,6 +37,17 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Vector3 mouseScreenPosition = Input.mousePosition;
+        mouseScreenPosition.z = Mathf.Abs(mainCamera.transform.position.z);
+        Vector3 mouseWorldPosition = mainCamera.ScreenToWorldPoint(mouseScreenPosition);
+        Vector2 headDirection = (Vector2)(Body.up * 1.25f + headTarget);
+
+        Body.up = (Vector2)(mouseWorldPosition - Body.position);
+        Head.up = Vector2.Lerp(Head.up, headDirection, 5 * Time.deltaTime);
+
+        fov.SetAimDirection(-Body.right);
+        fov.SetOrigin(transform.position);
+
         targetDir = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).normalized;
         sliding = Physics2D.OverlapCircleAll(transform.position, 0.25f, slipperyLayers).Length != 0;
         stuck = Physics2D.OverlapCircleAll(transform.position, 0.25f, stickyLayers).Length != 0;
@@ -52,18 +63,10 @@ public class PlayerMovement : MonoBehaviour
             moveSpeed *= slidingModifier;
         }
         rb.AddForce(targetDir * moveSpeed);
-        
-        Vector3 mouseScreenPosition = Input.mousePosition;
-        mouseScreenPosition.z = Mathf.Abs(mainCamera.transform.position.z);
-        Vector3 mouseWorldPosition = mainCamera.ScreenToWorldPoint(mouseScreenPosition);
-        Vector2 headDirection = (Vector2)(Body.up * 1.25f + headTarget);
-
-        Body.up = (Vector2)(mouseWorldPosition - Body.position);
-        Head.up = Vector2.Lerp(Head.up, headDirection, 5 * Time.deltaTime);
     }
 
     private void FixedUpdate()
     {
-        if (Random.Range(0, 60) < 3) headTarget = Random.insideUnitSphere;
+        if (UnityEngine.Random.Range(0, 60) < 3) headTarget = UnityEngine.Random.insideUnitSphere;
     }
 }
