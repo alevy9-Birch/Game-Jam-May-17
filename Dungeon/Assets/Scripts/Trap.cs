@@ -4,5 +4,5 @@ using UnityEngine;
 
 public abstract class Trap : MonoBehaviour
 {
-    public void Activate() { }
+    public abstract void Activate();
 }

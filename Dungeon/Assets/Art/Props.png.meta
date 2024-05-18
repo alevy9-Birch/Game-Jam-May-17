@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c4c90e337b5dd0a4f92507b1ee4a25b7
+guid: 9e8e1a2ca24303a46bc2f6366db77fdb
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,7 +117,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fluid_0
+      name: Detector On
       rect:
         serializedVersion: 2
         x: 0
@@ -128,22 +128,17 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -8, y: -8}
-        - {x: 3, y: -8}
-        - {x: 2, y: -4}
-        - {x: -4, y: 2}
-        - {x: -8, y: 3}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2fc4f56547c0b5048a22a8a02b0febe2
-      internalID: -433239676
+      spriteID: cab5596fd653a54408987b1e3aa7cc59
+      internalID: -832101670
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fluid_1
+      name: Detector Active
       rect:
         serializedVersion: 2
         x: 16
@@ -154,21 +149,17 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -8, y: 8}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: 8}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff548d008e1433840b1ef311e57587e0
-      internalID: -502391299
+      spriteID: 31d164f80d500d747ba3c91459392edd
+      internalID: -1717055671
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fluid_2
+      name: Detector Off
       rect:
         serializedVersion: 2
         x: 32
@@ -179,201 +170,17 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -8, y: -8}
-        - {x: 3, y: -8}
-        - {x: 2, y: -4}
-        - {x: -4, y: 2}
-        - {x: -8, y: 3}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7bba517f92b9ab14fb884e25d0d67ed1
-      internalID: 285173132
+      spriteID: 33df6226eee535e46b194357a706f72f
+      internalID: 920297613
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fluid_3
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 176
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 8}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: 8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1f3295614e8fcfa4fab237ad3a49b593
-      internalID: -880358399
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fluid_4
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 176
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -6, y: 7}
-        - {x: -8, y: 7}
-        - {x: -8, y: -8}
-        - {x: 7, y: -8}
-        - {x: 7, y: -4}
-        - {x: 0, y: 6}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 025cfe6a80654a94ca7d880bc1cad29f
-      internalID: -1285482808
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fluid_5
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 176
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 8}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: 8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 319dbfab67082a94f9942b02cafb8826
-      internalID: -1754080698
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fluid_6
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 176
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: -8}
-        - {x: 3, y: -8}
-        - {x: 2, y: -4}
-        - {x: -4, y: 2}
-        - {x: -8, y: 3}
-      tessellationDetail: 0
-      bones: []
-      spriteID: ef6e98ccfdc8af74a92f8d8f76a4d5ab
-      internalID: -1754192364
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fluid_7
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 176
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 8}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: 8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0bb1f4961c8b4f84b9b401b88c03e526
-      internalID: 1794131942
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fluid_8
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 176
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: -8}
-        - {x: 3, y: -8}
-        - {x: 2, y: -4}
-        - {x: -4, y: 2}
-        - {x: -8, y: 3}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 22b33d046b3dfc144ab4a1500de4a774
-      internalID: -353340152
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fluid_9
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 176
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 8}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: 8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 48a1b84e654c4f04899fcf9bc8e90e95
-      internalID: -2098442762
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fluid_10
+      name: Tombstone 1
       rect:
         serializedVersion: 2
         x: 0
@@ -384,22 +191,17 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -8, y: 8}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: 3}
-        - {x: 3, y: 8}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7fb1c020d95cd234d9f3a58ee89dfa27
-      internalID: 1904264489
+      spriteID: f219bbbade363ce4197f477747101379
+      internalID: -869498609
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fluid_11
+      name: Tombstone 2
       rect:
         serializedVersion: 2
         x: 16
@@ -410,227 +212,494 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -7, y: 6}
-        - {x: -8, y: 4}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: 4}
-        - {x: 7, y: 6}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2dd00e1165ce29844bb689a668eb2894
-      internalID: 133805982
+      spriteID: 063d8b7f2f29bf14aab575f84b4a33df
+      internalID: 1229424372
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fluid_12
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 160
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 8}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: 3}
-        - {x: 3, y: 8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 27f4237033c942b44a02298963c05c98
-      internalID: -951040709
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fluid_13
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 160
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -7, y: 6}
-        - {x: -8, y: 4}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: 4}
-        - {x: 7, y: 6}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 66423c6f9850a6b40b484de2e67e84a8
-      internalID: -2109960671
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fluid_14
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 160
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 8}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: 3}
-        - {x: 3, y: 8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2ec5698856c8d534883be3eff482cbcc
-      internalID: -536055536
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fluid_15
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 160
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 5}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: 5}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2bdb49b0138c6d14588fd76aa9f7036d
-      internalID: -79149016
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fluid_16
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 160
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 8}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: 3}
-        - {x: 3, y: 8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: d5829a5c6834e75449e83ddc7e693ad4
-      internalID: 1984667932
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fluid_17
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 160
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -7, y: 6}
-        - {x: -8, y: 4}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: 4}
-        - {x: 7, y: 6}
-      tessellationDetail: 0
-      bones: []
-      spriteID: a89b2fdee1a38cf4c9e63c54e1a01ff4
-      internalID: -2076846034
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fluid_18
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 160
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -8, y: 8}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: 3}
-        - {x: 3, y: 8}
-      tessellationDetail: 0
-      bones: []
-      spriteID: aa8fa43f24add664fa7b77d10c32943d
-      internalID: -262695997
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fluid_19
+      name: Coffin 1
       rect:
         serializedVersion: 2
         x: 144
         y: 160
+        width: 48
+        height: 32
+      alignment: 9
+      pivot: {x: 0.16666667, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb5b57e23ae9b3f4b9728117df4d67de
+      internalID: -1181717834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grave 1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 32
+        height: 16
+      alignment: 9
+      pivot: {x: 0.25, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e7d5d32b64f80547a8283b770285b3d
+      internalID: -1126785128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grave 2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 144
+        width: 16
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00399b508f19d644db102515f263827a
+      internalID: -1601066418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree 1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1a1e0d2b191b3b4a86681c9ac3a4ca5
+      internalID: -1650524089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree 3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2efb09e087c65c4bbdf4a9b800da027
+      internalID: -2126775234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tripwire Hook
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
         width: 16
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -7, y: 6}
-        - {x: -8, y: 4}
-        - {x: -8, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: 4}
-        - {x: 7, y: 6}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58ae7891edf91044c8ac996cd1c36129
-      internalID: -1730110706
+      spriteID: 9d0d8a0ee5e0fc945a55f755c94e9202
+      internalID: 1321959790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wire
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e08c2e2258235e5458565f1e6a878404
+      internalID: -466577972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Broken Wire
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46ef7ec39bf4c53409eaad74c269c266
+      internalID: 1051990697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coffin 2
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 128
+        width: 48
+        height: 32
+      alignment: 9
+      pivot: {x: 16, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc878ecc185cc524b9fc75cd06207add
+      internalID: 430310106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chair 1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1551a8d0b5f4db94d959ea5b51248c52
+      internalID: -569788702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chair 2
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caebd80f67f27e94f99de406380d0a30
+      internalID: -1591920838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Box 1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00326b7706a85b94ab55249ef3b13096
+      internalID: -303003475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coffin 3
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 96
+        width: 48
+        height: 32
+      alignment: 9
+      pivot: {x: 0.16666667, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8d62d77711d9ac4181040d853aaad5c
+      internalID: 111443764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Box
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a92c9088fc2b644fb4a19f8509a9a24
+      internalID: 1227605651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Box 2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6af2721a0c94e94ba2811b74bbbd33c
+      internalID: 1059683766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree 2
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bf44a1c7bcff9142a4a30becfae950c
+      internalID: 2044699929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree 4
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5c02b14971ef074793776dd199e10d5
+      internalID: -2048398854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff30377d7a77e9242acfb823c2864456
+      internalID: 1171597058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Table 3
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 64
+        width: 48
+        height: 32
+      alignment: 9
+      pivot: {x: 0.16666667, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f091ff30c5c1d842b1ada9538d16d3f
+      internalID: 1125446681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Table 2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.25, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 637ccb41ca8374f4581b3e20b6dbedd7
+      internalID: 1404037448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Table 1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 64
+        height: 32
+      alignment: 9
+      pivot: {x: 0.125, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1095bbeb5ebc93419bd9cd5f7666e89
+      internalID: -1582359187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamp 1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 1, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1a19268d77e07d48b56c212880370fa
+      internalID: 1981016233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamp 2
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1398d13c7c39b94a9cd2b4b491b2000
+      internalID: 389905750
       vertices: []
       indices: 
       edges: []
@@ -646,26 +715,99 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Fluid_0: -433239676
-      Fluid_1: -502391299
-      Fluid_10: 1904264489
-      Fluid_11: 133805982
-      Fluid_12: -951040709
-      Fluid_13: -2109960671
-      Fluid_14: -536055536
-      Fluid_15: -79149016
-      Fluid_16: 1984667932
-      Fluid_17: -2076846034
-      Fluid_18: -262695997
-      Fluid_19: -1730110706
-      Fluid_2: 285173132
-      Fluid_3: -880358399
-      Fluid_4: -1285482808
-      Fluid_5: -1754080698
-      Fluid_6: -1754192364
-      Fluid_7: 1794131942
-      Fluid_8: -353340152
-      Fluid_9: -2098442762
+      Arrow: 1171597058
+      Broken Wire: 1051990697
+      Chair 1: -569788702
+      Chair 2: -1591920838
+      Coffin 1: -1181717834
+      Coffin 2: 430310106
+      Coffin 3: 111443764
+      Detector Active: -1717055671
+      Detector Off: 920297613
+      Detector On: -832101670
+      Grave 1: -1126785128
+      Grave 2: -1601066418
+      Lamp 1: 1981016233
+      Lamp 2: 389905750
+      Large Box: 1227605651
+      Props_10: -1614425392
+      Props_11: -1628258528
+      Props_14: 1505403477
+      Props_15: -1136821359
+      Props_16: -2031010262
+      Props_17: -1852970708
+      Props_18: 1262901426
+      Props_19: -2033915925
+      Props_20: -1347031533
+      Props_22: 830561171
+      Props_23: -1200747758
+      Props_25: 2006407207
+      Props_28: -415813033
+      Props_29: -265375550
+      Props_3: 272232391
+      Props_31: -1953101754
+      Props_32: 418106494
+      Props_33: -1401516394
+      Props_34: 1928035541
+      Props_35: -2050012687
+      Props_39: 1166187506
+      Props_4: -1168245787
+      Props_40: -1887765593
+      Props_41: 566419786
+      Props_42: 919452745
+      Props_43: 1791180281
+      Props_44: 1468082445
+      Props_46: 2131599760
+      Props_47: -1477248812
+      Props_5: -554830402
+      Props_51: 405474256
+      Props_52: -554795754
+      Props_53: -1834055420
+      Props_54: -289534733
+      Props_55: -323402196
+      Props_56: 1457215926
+      Props_58: 155140013
+      Props_59: -1047056283
+      Props_6: -157679263
+      Props_61: 287833023
+      Props_64: 1423040050
+      Props_65: 1144171834
+      Props_67: -2120092688
+      Props_68: -673038712
+      Props_69: -1807226771
+      Props_7: 1604273925
+      Props_70: 1508907031
+      Props_71: -2073591377
+      Props_74: -1867274273
+      Props_75: 1589224689
+      Props_77: 1220312314
+      Props_79: -1969918823
+      Props_8: -1355066429
+      Props_80: 102236323
+      Props_81: -327619841
+      Props_84: 729085868
+      Props_85: -1671405926
+      Props_86: 168640045
+      Props_87: 1441041098
+      Props_88: -919649069
+      Props_89: 1552029167
+      Props_9: -2118713563
+      Props_90: 972462270
+      Props_91: -1501626122
+      Props_92: -2097063906
+      Small Box 1: -303003475
+      Small Box 2: 1059683766
+      Table 1: -1582359187
+      Table 2: 1404037448
+      Table 3: 1125446681
+      Tombstone 1: -869498609
+      Tombstone 2: 1229424372
+      Tree 1: -1650524089
+      Tree 2: 2044699929
+      Tree 3: -2126775234
+      Tree 4: -2048398854
+      Tripwire Hook: 1321959790
+      Wire: -466577972
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
