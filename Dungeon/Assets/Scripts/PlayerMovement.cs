@@ -15,11 +15,14 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask slipperyLayers;
     public LayerMask stickyLayers;
 
+    public Transform Head;
+    public Transform Body;
+    public Camera mainCamera;
+
+    private Vector3 headTarget;
     private Vector2 targetDir;
 
-    [SerializeField]
     private bool sliding;
-    [SerializeField]
     private bool stuck;
     private bool sprinting;
 
@@ -49,10 +52,18 @@ public class PlayerMovement : MonoBehaviour
             moveSpeed *= slidingModifier;
         }
         rb.AddForce(targetDir * moveSpeed);
+        
+        Vector3 mouseScreenPosition = Input.mousePosition;
+        mouseScreenPosition.z = Mathf.Abs(mainCamera.transform.position.z);
+        Vector3 mouseWorldPosition = mainCamera.ScreenToWorldPoint(mouseScreenPosition);
+        Vector2 headDirection = (Vector2)(Body.up * 1.25f + headTarget);
+
+        Body.up = (Vector2)(mouseWorldPosition - Body.position);
+        Head.up = Vector2.Lerp(Head.up, headDirection, 5 * Time.deltaTime);
     }
 
     private void FixedUpdate()
     {
-        
+        if (Random.Range(0, 60) < 3) headTarget = Random.insideUnitSphere;
     }
 }
