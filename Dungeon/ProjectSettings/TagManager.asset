@@ -44,11 +44,14 @@ TagManager:
   - name: Ground
     uniqueID: 2286162781
     locked: 0
+  - name: Floor Props
+    uniqueID: 3105476579
+    locked: 0
   - name: Movement Modifiers
     uniqueID: 809653221
     locked: 0
-  - name: Props
-    uniqueID: 3105476579
+  - name: Default Props
+    uniqueID: 1577950469
     locked: 0
   - name: Player
     uniqueID: 1046819617
