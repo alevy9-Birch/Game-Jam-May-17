@@ -23,7 +23,6 @@ public class ClankTrigger : MonoBehaviour
     private void Trigger(object sender, MyEventArgs e)
     {
         // Handle the event
-        Debug.Log("Event received with message: " + e.message);
         if (Random.Range(0,1) < activationOdds)
         {
             foreach (Trap trap in Traps)

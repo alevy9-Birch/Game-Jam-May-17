@@ -15,8 +15,8 @@ TagManager:
   - Sticky
   - Wall
   - Ground
-  - 
-  - 
+  - Trap
+  - Prop
   - 
   - 
   - 
@@ -49,6 +49,9 @@ TagManager:
     locked: 0
   - name: Default Props
     uniqueID: 1577950469
+    locked: 0
+  - name: Traps
+    uniqueID: 737636371
     locked: 0
   - name: Player
     uniqueID: 1046819617
