@@ -1,4 +1,3 @@
-using UnityEditor.ShaderGraph.Drawing.Inspector.PropertyDrawers;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
@@ -16,6 +15,10 @@ public class Enemy : MonoBehaviour
 
     public Tilemap wall;
     public Tilemap floor;
+
+    private AudioSource audioSource;
+    public AudioClip[] grunts;
+    public AudioClip detected;
 
     // Method to check if the player is within range
     public bool IsWithinRange()
@@ -65,11 +68,20 @@ public class Enemy : MonoBehaviour
         Debug.DrawLine(transform.position, targetPos, Color.red);
     }
 
+    private void FixedUpdate()
+    {
+        if (state == EnemyState.Idle && Vector2.Distance(transform.position, (Vector2)targetPos) > maxRange)
+        {
+            RandomTarget();
+        }
+    }
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
         layerMask = LayerMask.GetMask("Wall");
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void MoveToTarget()
@@ -99,12 +111,18 @@ public class Enemy : MonoBehaviour
         if (hit.collider == null)
         {
             targetPos = player.position;
+            if (state != EnemyState.Active)
+            {
+                audioSource.clip = detected;
+                audioSource.Play();
+            }
             return true;
         }
         else
         {
             foreach (Vector3Int potentialTarget in EnemyAI.visibleTiles)
             {
+                if (Vector2.Distance(transform.position, (Vector2Int)potentialTarget) > maxRange) { continue; }
                 Vector2 direction = potentialTarget - transform.position;
                 hit = Physics2D.Raycast(transform.position, direction.normalized, direction.magnitude, layerMask);
                 if (hit.collider == null)
@@ -136,6 +154,9 @@ public class Enemy : MonoBehaviour
             RaycastHit2D ray = Physics2D.Raycast(transform.position, (targetPos - transform.position).normalized, (targetPos - transform.position).magnitude, layerMask);
             tryAgain = Wall != null || Floor == null || ray.collider != null;
         } while (tryAgain);
+
+        audioSource.clip = grunts[Mathf.FloorToInt(Random.Range(0f,grunts.Length))];
+        audioSource.Play();
     }
 }
 

@@ -22,14 +22,19 @@ public class Tripwire : Trap
     {
         if (collision.CompareTag("Player"))
         {
-            GetComponent<Collider2D>().enabled = false;
-            foreach (SpriteRenderer sr in spriteRenderers)
-            {
-                sr.sprite = sprites[1];
-            }
-            Instantiate(Arrow, transform.position + transform.right, transform.rotation);
+            Invoke("Fire", 0.5f);
         }
     }
 
-
+    private void Fire()
+    {
+        GetComponent<Collider2D>().enabled = false;
+        foreach (SpriteRenderer sr in spriteRenderers)
+        {
+            sr.sprite = sprites[1];
+        }
+        GameObject arrow = Instantiate(Arrow, transform.position, transform.rotation);
+        arrow.transform.up = transform.right;
+        arrow.GetComponent<Rigidbody2D>().velocity = arrow.transform.up * 8;
+    }
 }

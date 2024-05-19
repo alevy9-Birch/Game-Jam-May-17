@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.WSA;
 
 public class SkulkSensor : MonoBehaviour
 {
@@ -15,6 +12,8 @@ public class SkulkSensor : MonoBehaviour
     private float resetTime;
     public float spawnChance = 0.4f;
 
+    private AudioSource audioSource;
+
     // Start is called before the first frame update
     private void Start()
     {
@@ -22,6 +21,7 @@ public class SkulkSensor : MonoBehaviour
         playerRB = player.GetComponent<Rigidbody2D>();
         playerTransform = player.transform;
         spriteRenderer = GetComponent<SpriteRenderer>();
+        audioSource = GetComponent<AudioSource>();
 
         if (Random.Range(0f, 1f) < spawnChance)
         {
@@ -42,6 +42,7 @@ public class SkulkSensor : MonoBehaviour
                 Active = false;
                 spriteRenderer.sprite = sprites[1];
                 resetTime = Time.time + 6;
+                audioSource.Play();
             }
         }
         else

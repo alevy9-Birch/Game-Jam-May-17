@@ -25,11 +25,14 @@ public class PlayerMovement : MonoBehaviour
     private bool sprinting;
 
     private Rigidbody2D rb;
+    private AudioSource footsteps;
+    public AudioClip[] footstepsClip;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        footsteps = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -58,6 +61,12 @@ public class PlayerMovement : MonoBehaviour
             moveSpeed *= slidingModifier;
         }
         rb.AddForce(targetDir * moveSpeed);
+
+        if (rb.velocity.magnitude > 0.1 && !footsteps.isPlaying)
+        {
+            footsteps.clip = footstepsClip[Mathf.FloorToInt(UnityEngine.Random.Range(0,3))];
+            footsteps.Play();
+        }
     }
 
     private void FixedUpdate()
