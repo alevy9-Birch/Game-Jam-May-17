@@ -8,7 +8,7 @@ public class Enemy : MonoBehaviour
     public float maxRange = 5.0f; // Maximum range of detection
     public float idleRange = 15f;
     private Vector3 targetPos;
-    private readonly int fov = 90;
+    public int fov = 140;
     private Rigidbody2D rb;
     Transform player;
     public float moveSpeed = 8f;
@@ -36,7 +36,7 @@ public class Enemy : MonoBehaviour
         }
 
         RaycastHit2D hit = Physics2D.Raycast(transform.position, directionToPlayer, directionToPlayer.magnitude, obstructionLayer);
-        if (hit.collider != null && hit.collider.CompareTag("Player"))
+        if (hit.collider == null)
         {
             return true;
         }
@@ -77,10 +77,16 @@ public class Enemy : MonoBehaviour
         Vector2 dirToTarget = (targetPos - transform.position).normalized;
         transform.up = dirToTarget;
         rb.AddForce(dirToTarget * moveSpeed);
-
-        if ((targetPos - transform.position).magnitude < 0.5f && state == EnemyState.Idle)
+        if (state == EnemyState.Idle)
         {
-            RandomTarget();
+            if ((targetPos - transform.position).magnitude < 0.5f)
+            {
+                RandomTarget();
+            }
+        }
+        else
+        {
+            rb.AddForce(dirToTarget * moveSpeed);
         }
     }
 

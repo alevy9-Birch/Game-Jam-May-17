@@ -73,17 +73,17 @@ public class EnemyAI : MonoBehaviour
         {
             if (enemy.state == EnemyState.Active) continue;
 
-            if (enemy.IsWithinRange() && enemy.CanSeePlayer(obstructionLayer))
+            if (!enemy.IsWithinRange())
+            {
+                enemy.state = EnemyState.Wait;
+            }
+            else if (enemy.CanSeePlayer(obstructionLayer))
             {
                 enemy.state = EnemyState.Active;
             }
-            else if (enemy.IsWithinRange())
-            {
-                enemy.state = EnemyState.Idle;
-            }
             else
             {
-                enemy.state = EnemyState.Wait;
+                enemy.state = EnemyState.Idle;
             }
         }
     }
