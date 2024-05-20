@@ -2,9 +2,7 @@ using UnityEngine;
 
 public class SkulkSensor : MonoBehaviour
 {
-    private Rigidbody2D playerRB;
     private Transform playerTransform;
-    public float speedThreshold = 6.5f;
     public float distanceThreshold = 6.5f;
     private SpriteRenderer spriteRenderer;
     public Sprite[] sprites;
@@ -18,7 +16,6 @@ public class SkulkSensor : MonoBehaviour
     private void Start()
     {
         GameObject player = GameObject.FindGameObjectWithTag("Player");
-        playerRB = player.GetComponent<Rigidbody2D>();
         playerTransform = player.transform;
         spriteRenderer = GetComponent<SpriteRenderer>();
         audioSource = GetComponent<AudioSource>();
@@ -36,7 +33,7 @@ public class SkulkSensor : MonoBehaviour
     {
         if (Active)
         {
-            if (playerRB.velocity.magnitude > speedThreshold && (playerTransform.position - transform.position).magnitude < distanceThreshold)
+            if (PlayerMovement.sprinting && (playerTransform.position - transform.position).magnitude < distanceThreshold)
             {
                 EventManager.TriggerMyEvent(this, new MyEventArgs("Caught by Skulk Sensor!"));
                 Active = false;

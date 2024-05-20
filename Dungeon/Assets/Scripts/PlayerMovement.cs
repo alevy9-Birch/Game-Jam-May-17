@@ -22,7 +22,7 @@ public class PlayerMovement : MonoBehaviour
 
     private bool sliding;
     private bool stuck;
-    private bool sprinting;
+    public static bool sprinting;
 
     private Rigidbody2D rb;
     private AudioSource footsteps;
